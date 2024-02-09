@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cart</title>
+  <link rel="stylesheet" type="text/css" href="style.css">
+  <script src="https://kit.fontawesome.com/92d70a2fd8.js" crossorigin="anonymous"></script>
+</head>
+<body>
+  <header>
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="contact.html">Contact Us</a></li>
+        <li><a href="cart.html"><i class="fa-solid fa-cart-shopping"></i> <span id="cart-icon">0</span></a></li>
+      </ul>
+    </nav>
+  </header>
+  <h2>Shopping Cart</h2>
+  <div id="cart-items">
+  </div>
+
+  <div style="text-align: center; margin: 10px;"><strong id="totalPrice"></strong></div>
+  <div style="text-align: center; margin: 10px;"><button onclick="clearCart()">Clear Cart</button><button onclick="checkout()">Check out</button></div>
+
+  <script src="script.js"></script>
+  <script src="cart.js"></script>
+</body>
+</html>

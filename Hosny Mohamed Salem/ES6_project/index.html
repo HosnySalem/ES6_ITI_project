@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>E-commerce Website</title>
+  <link rel="stylesheet" type="text/css" href="style.css">
+  <script src="https://kit.fontawesome.com/92d70a2fd8.js" crossorigin="anonymous"></script>
+
+</head>
+<body>
+  <header>
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="contact.html">Contact Us</a></li>
+        <li><a href="cart.html"><i class="fa-solid fa-cart-shopping"></i> <span id="cart-icon">0</span></a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <div class="slideshow-container" id="slideid">
+    <div class="slideshow">
+        <img src="" alt="" id="slideImg">
+        <a id="prevBtn" class="slideBtns">❮</a>
+        <a id="nextBtn" class="slideBtns">❯</a> 
+    </div>
+  </div>
+  
+  <div id="categories">
+    <button class="category" onclick="generateProductInfo('all')">ِAll</button>
+    <button class="category" onclick="generateProductInfo('electronics')">Electronics</button>
+    <button class="category" onclick="generateProductInfo('jewelery')">Jewelery</button>
+    <button class="category" onclick="generateProductInfo(`men's clothing`)">Men's clothing</button>
+    <button class="category" onclick="generateProductInfo(`women's clothing`)">Women's clothing</button>
+  </div>
+  
+  
+  <div style="clear:both"></div>
+  <section id="products">
+    
+  </section>
+  <div style="clear:both"></div>
+
+  <footer>
+    <div class="footer-content">
+      <p>Company Information</p>
+      <p>Contact: info@example.com</p>
+      <div class="social-media">
+        <i class="fa fa-facebook"></i>
+        <i class="fa fa-twitter"></i>
+        <i class="fa fa-instagram"></i>
+      </div>
+      <button id="back-to-top" onclick="backToTop()">Back to Top</button>
+    </div>
+  </footer>
+
+
+  <script src="script.js"></script>
+</body>
+</html>
